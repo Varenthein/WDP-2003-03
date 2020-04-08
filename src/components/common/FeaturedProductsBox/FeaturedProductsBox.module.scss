@@ -125,25 +125,27 @@
     padding: 15px 10px 10px 10px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
 
     .outlines {
-      width: 35%;;
       display: flex;
       justify-content: space-between;
+      margin-bottom: 10px;
     }
+
+    .price {
+      display: flex;
+      //justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+  
+      div:first-of-type {
+        border: none;
+      }
+    }
+
   }
 
-  .price {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    div:first-of-type {
-      border: none;
-    }
-  }
-    
   .oldPrice {
     text-decoration: line-through;
   }

@@ -38,4 +38,50 @@ dla plików, które zostały wybrane za pomocą `git add` i mają być zapisane 
 
 ## Konwencje i dobre praktyki
 
-DO UZUPEŁNIENIA
+#### Narzędzia pracy:
+Jira, Git, GitHub;
+
+#### Biblioteka do tworzenia interfejsu: 
+React;
+
+#### Podstawowa struktura katalogów projektu:
+src
+  - components
+    - common
+    - features
+    - layout
+    - views
+  - redux
+  - styles
+
+#### Zasady umieszczania plików:
+* Foldery i pliki grupowane według funkcjonalności;
+* Zawartość folderu: folder oraz pliki `.js`, `.scss`, `.test.js` mają nazwy takie jak nazwa komponentu;
+* Do nazywania plików stosuje się notację `PascalCase`;
+* Do nazywania zmiennych i funkcji stosuje się notację `camelCase`;
+* Folder **'components'**: podfoldery grupują komponenty wg ich funkcji;
+* Style:
+  - Style globalne: katalog `styles`,
+  - style dla poszczególnych komponentów - w katalogach konkretnego komponentu pod nazwą `NazwaKomponentu.module.scss`
+
+
+#### Zasady pracy z kodem i pracy zespołowej:
+* Nazewnictwo klas : wg konwencji OOCSS (zorientowanie obiektowe, reużywalność kodu CSS);
+* Commity i komentarze na GitHub piszemy w j. angielskim;
+* Commity: krótka informacja o konkretnej zmianie (np. `Add styles to komponent (…)`);
+* Repozytorium lokalne aktualizujemy z origin master (`git pull origin master`)  przed rozpoczęciem nowego taska;
+* Na lokalnym masterze tworzymy nowy branch z nazwą/numerem taska;
+* Lokalny branch z taskiem aktualizujemy poprzez pobranie zmian z repozytorium zdalnego (`git pull origin master`);
+* Rozwiązujemy konflikty i wysyłamy branch z taskiem na repozytorium zdalne do brancha zdalnego o takiej nazwie jak lokalny (`git push origin _nazwa-taska_`) i tworzymy Pull Request wraz z opisem wprowadzonych zmian;
+* Merge brancha: po weryfikacji i 2 zatwierdzeniach;
+
+#### Status prac - aktualizacje:
+* GitHub: przy zmianie statusu taska / wprowadzaniu zmian – pamiętamy o zmianach etykiet w sekcji *Labels*.
+* Przy przepływie tasków (developer, osoba wykonująca review) zmieniemy status taska poprzez umieszczenie w odpowiedniej kolumnie na platformie Jira.
+* Przeznaczenie kolumn:
+  - _backlog_ - taski, które czekają na przypisanie do osób
+  - _queued_ – taski przypisane do osób
+  - _in progress_ – taski w toku
+  - _in review_ – taski przesłane do akceptacji
+  - _done_ – taski zakończone i  zmergowane do mastera
+

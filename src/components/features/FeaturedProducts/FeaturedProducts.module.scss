@@ -2,6 +2,41 @@
 
 .root {
   padding: 2rem 0 0 0;
+
+
+  .hidden {
+    display: none;
+  }
+
+  .h100 {
+    height: 100vh;
+  }
+
+  .shadowSm {
+    .title {
+      font-size: 1.8rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      div:last-of-type {
+        font-weight: bold;
+      }
+    }
+
+    .subtitle {
+      font-size: 0.8rem;
+      text-align: center;
+    }
+  }
+
+  .buttonsSm {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+
   
   .altPanel {
     display: flex;
@@ -33,24 +68,34 @@
       background-color: $featured-panel-bg;
       color: $featured-panel-color;
       height: 50%;
+      padding: 0 10px;
       position: absolute;
       top: 50%;
       left: 0;
       right: 0;
       opacity: 0.5;
       transform: translateY(-50%);
+      
 
       .title {
+        width: 100%;
         font-size: 2.8rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
 
-        span {
+        div:last-of-type {
           font-weight: bold;
+          margin: 0 15px;
         }
       }
 
       .subtitle {
         font-size: 1.5rem;
+        text-align: center;
       }
+
     } 
 
     .buttons {

@@ -12,12 +12,20 @@ const Brands = children => (
         </div>
         <div className='col-10'>
           <div className='row'>
-            <div className={`col-2 ${styles.imageOne} ${styles.image}`}></div>
-            <div className={`col-2 ${styles.imageTwo} ${styles.image}`}></div>
-            <div className={`col-2 ${styles.imageThree} ${styles.image}`}></div>
-            <div className={`col-2 ${styles.imageFour} ${styles.image}`}></div>
-            <div className={`col-2 ${styles.imageFive} ${styles.image}`}></div>
-            <div className={`col-2 ${styles.imageSix} ${styles.image}`}></div>
+            <div className={`col-4 col-md-2 ${styles.imageOne} ${styles.image}`}></div>
+            <div className={`col-4 col-md-2 ${styles.imageTwo} ${styles.image}`}></div>
+            <div
+              className={`col-4 col-md-2 ${styles.imageThree} ${styles.image}`}
+            ></div>
+            <div
+              className={`col-4 col-md-2 d-none d-md-block  ${styles.imageFour} ${styles.image}`}
+            ></div>
+            <div
+              className={`col-md-2 d-none d-md-block ${styles.imageFive} ${styles.image}`}
+            ></div>
+            <div
+              className={`col-md-2 d-none d-md-block ${styles.imageSix} ${styles.image}`}
+            ></div>
           </div>
         </div>
         <div className='col-1'>

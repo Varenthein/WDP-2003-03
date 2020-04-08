@@ -1,5 +1,13 @@
 @import "../../../styles/settings.scss";
 
 .root {
-  padding: $base-padding 0;
+  padding: 0 0 $base-padding 0;
+  text-align: center;
+
+  .category {
+    color: $primary;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
 }

@@ -7,11 +7,17 @@ const SwipeComponent = ({ children, swipeAction, activeItem, itemsCount }) => {
     if (activeItem - 1 >= 0) {
       swipeAction(activeItem - 1);
     }
+    if (activeItem - 1 < 0) {
+      swipeAction(itemsCount - 1);
+    }
   };
 
   const onSwipedLeft = () => {
     if (activeItem + 1 < itemsCount) {
       swipeAction(activeItem + 1);
+    }
+    if (activeItem + 1 >= itemsCount) {
+      swipeAction(itemsCount - 1 - activeItem);
     }
   };
 
