@@ -9,7 +9,7 @@ Przykładowy projekt sklepu tworzony przez cztero osobową grupę przez 3 tygodn
 
 ## Demo
 
-DO UZUPEŁNIENIA
+<a href="https://furniture-shop-project.herokuapp.com/#">Furniture Shop - DEMO </a>
 
 ## Inicjacja projektu
 
